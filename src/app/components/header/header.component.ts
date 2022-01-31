@@ -14,4 +14,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggleAddTask(){
+    console.log("¡Hiciste click!") //acá se define lo que se hace con click "entrante" que salió del módulo 'button'
+  }
+
 }
