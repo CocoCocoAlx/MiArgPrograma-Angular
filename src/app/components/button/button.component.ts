@@ -8,7 +8,7 @@ import { Component, Input, OnInit , Output, EventEmitter} from '@angular/core';
 export class ButtonComponent implements OnInit {
   @Input() text: string = ""; //se define el método por el cual se toma el texto del botón (lo busca en el módulo HTML del header)
   @Input() color: string = ""; //ídem para el color
-  @Output() btnClick = new EventEmitter()
+  @Output() btnClick = new EventEmitter() //esta es una definición para eventos que "salen" del módulo
 
   constructor() { }
 
@@ -16,7 +16,7 @@ export class ButtonComponent implements OnInit {
   }
 
   onClick() {
-    this.btnClick.emit()
+    this.btnClick.emit() //orden para que el click "salga" del módulo
   }
 
 }

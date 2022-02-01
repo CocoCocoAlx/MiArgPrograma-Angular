@@ -1,4 +1,7 @@
 <div class="task">
-    <h3>{{task.text}}</h3> <!--acá se importan los textos y el día de cada tarea en una tarjeta-->
+    <h3>{{task.text}}<fa-icon
+        [icon]="faTimes"
+        [ngStyle]="{'color':'yellow'}"
+        ></fa-icon></h3> <!--acá se importan los textos y el día de cada tarea en una tarjeta-->
     <h5>{{task.day}}</h5>
 </div>
